@@ -1,0 +1,374 @@
+
+
+
+
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <title>API Guide</title>
+
+    <!-- CSS -->
+    <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css' rel='stylesheet'>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href='../_static/main.css' rel='stylesheet'>
+    <link href='../_static/style.css' rel='stylesheet'>
+    <link href='../_static/doxygen.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="https://media.readthedocs.org/css/badge_only.css" type="text/css" />
+
+    <!-- Sphinx search -->
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="https://media.readthedocs.org/javascript/jquery/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="https://media.readthedocs.org/javascript/jquery/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://media.readthedocs.org/javascript/underscore.js"></script>
+    <script type="text/javascript" src="https://media.readthedocs.org/javascript/doctools.js"></script>
+    <script type="text/javascript" src="https://media.readthedocs.org/javascript/readthedocs-doc-embed.js"></script>
+    <script type="text/javascript" src="searchindex.js.html"></script>
+    <!-- Transifex -->
+    <script type="text/javascript">
+      window.liveSettings = {
+        api_key: "bbf87af0641e4bbf89c98088d48e0449",
+      };
+    </script>
+    <script type="text/javascript" src="http://cdn.transifex.com/live.js"></script>
+
+    <!-- title card -->
+    <link  href='../_static/title-card.css' rel='stylesheet'>
+    <script src='../_static/script.js'></script>
+    
+    <!-- Sphinx search -->
+    <link rel="search" type="application/opensearchdescription+xml"
+          title="Search within Graphene Technical Documentation  documentation"
+          href="../_static/opensearch.xml.html"/>
+
+    <!-- Meta -->
+    <meta content="Graphene Documentation" property="og:site_name">
+    <meta content="Graphene Documentation" property="og:title">
+    <meta content="website" property="og:type">
+    <meta content="Graphene Documentation" name="description">
+    <meta content="Graphene Documentation" property="og:description">
+    
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-68381245-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+ 
+<!-- RTD Extra Head -->
+
+<!-- 
+Always link to the latest version, as canonical.
+http://docs.readthedocs.org/en/latest/canonical.html
+-->
+<link rel="canonical" href="index.html" />
+
+<link rel="stylesheet" href="https://media.readthedocs.org/css/readthedocs-doc-embed.css" type="text/css" />
+
+<script type="text/javascript" src="../_static/readthedocs-data.js"></script>
+
+<!-- Add page-specific data, which must exist in the page js, not global -->
+<script type="text/javascript">
+READTHEDOCS_DATA['page'] = 'api/index' 		
+READTHEDOCS_DATA['source_suffix'] = '.rst'
+</script>
+
+<script type="text/javascript" src="../_static/readthedocs-dynamic-include.js"></script>
+
+<!-- end RTD <extrahead> -->
+</head>
+ <body class='no-literate'>
+
+
+ <div class='title-area title-card' style='background-image: url("https://bitshares.org/images/bg.jpg")'>
+   <div class='in'>
+     <div class='headline'>
+       <h1>API Guide</h1>
+ 
+     </div>
+   </div>
+ </div>
+
+ <div class='header'>
+   <div class='left navlinks'>
+    
+        <div class="prev">
+         <div class="title">previous</div>
+         <span><a href="../integration/libraries/python-exchange.html">Python Module for the DEX</a></span>
+        </div>
+        <div class="top">
+         <div class="title">top</div>
+         <span><a class="uplink" href="../index.html">Contents</a></span>
+        </div>
+        <div class="next">
+         <div class="title">next</div>
+         <span><a href="rpc.html">Remote Procedure Calls</a></span>
+        </div>
+
+   </div>
+ </div>
+
+ <div class='content-root'>
+  <!-- menu bar -->
+  <div class='menubar'>
+   <div class='section'>
+    <a href="../index.html"><img src="../_static/grphn-logo.svg" height="48" /></a>
+    <a href="../bitshares/index.html"><img src="../_static/bitshares-logo.png" height="48" /></a>
+    <a href="../muse/index.html"><img src="../_static/MUSE_logo_transp_v1.png" height="48" /></a>
+   </div>
+   <div class='menu section'>
+    <div id="toc">
+      <h3>Table Of Contents</h3>
+      <ul>
+<li class="toctree-l1"><a class="reference internal" href="../bitshares/index.html">BitShares 2.0</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../muse/index.html">MUSE</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../integration/index.html">Integration Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../integration/index.html#basic-knowledge">Basic Knowledge</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../integration/index.html#use-cases">Use-Cases</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../integration/exchanges/index.html">Exchanges, Bridges, and Gateways</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="index.html#">API Guide</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="index.html#interfacing-with-graphene">Interfacing with Graphene</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="index.html#wallet-api">Wallet API</a></li>
+<li class="toctree-l5"><a class="reference internal" href="index.html#blockchain-api-s">Blockchain API(s)</a></li>
+<li class="toctree-l5"><a class="reference internal" href="index.html#blockchain-objects-and-their-identifiers">Blockchain Objects and their Identifiers</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../integration/merchants/index.html">Merchants</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="index.html#">API Guide</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="index.html#interfacing-with-graphene">Interfacing with Graphene</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="index.html#wallet-api">Wallet API</a></li>
+<li class="toctree-l5"><a class="reference internal" href="index.html#blockchain-api-s">Blockchain API(s)</a></li>
+<li class="toctree-l5"><a class="reference internal" href="index.html#blockchain-objects-and-their-identifiers">Blockchain Objects and their Identifiers</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../integration/traders/index.html">Traders</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="index.html#">API Guide</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="index.html#interfacing-with-graphene">Interfacing with Graphene</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="index.html#wallet-api">Wallet API</a></li>
+<li class="toctree-l5"><a class="reference internal" href="index.html#blockchain-api-s">Blockchain API(s)</a></li>
+<li class="toctree-l5"><a class="reference internal" href="index.html#blockchain-objects-and-their-identifiers">Blockchain Objects and their Identifiers</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../integration/libraries/python.html">General Python Library</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../integration/libraries/python-exchange.html">Python Module for the DEX</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../integration/businesses/index.html">Businesses</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="index.html#">API Guide</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="index.html#interfacing-with-graphene">Interfacing with Graphene</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="index.html#wallet-api">Wallet API</a></li>
+<li class="toctree-l5"><a class="reference internal" href="index.html#blockchain-api-s">Blockchain API(s)</a></li>
+<li class="toctree-l5"><a class="reference internal" href="index.html#blockchain-objects-and-their-identifiers">Blockchain Objects and their Identifiers</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="index.html#">API Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="index.html#interfacing-with-graphene">Interfacing with Graphene</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="index.html#wallet-api">Wallet API</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="rpc.html">Remote Procedure Calls</a></li>
+<li class="toctree-l4"><a class="reference internal" href="wallet-api.html">Wallet API Calls</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#blockchain-api-s">Blockchain API(s)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="rpc.html">Remote Procedure Calls</a></li>
+<li class="toctree-l4"><a class="reference internal" href="websocket.html">Websocket Calls &amp; Notifications</a></li>
+<li class="toctree-l4"><a class="reference internal" href="blockchain-api.html">Blockchain API</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#blockchain-objects-and-their-identifiers">Blockchain Objects and their Identifiers</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../development/blockchain/objects.html">Objects and IDs</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../development/index.html">Development Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../testnet/index.html">Testnets</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../meta/index.html">How to Contribute</a></li>
+</ul>
+
+    </div>
+   </div>
+   <div class="search section">
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+   </div>
+   <div class='bottom section'>
+    <p class="centered">
+     This page is proudly presented by <br />
+     <a href="http://chainsquad.com">ChainSquad GmbH</a>
+    </p>
+    <p class="centered">
+     <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+    </p>
+   </div>
+  </div>
+  <div class='content'>
+   
+  <div class="section" id="api-guide">
+<h1>API Guide<a class="headerlink" href="index.html#api-guide" title="Permalink to this headline">¶</a></h1>
+<p>This page serves as a comprehensive reference for the Graphene API and
+its blockchain, such as <a class="reference internal" href="../bitshares/index.html"><span class="doc">BitShares 2.0</span></a> and
+<a class="reference internal" href="../muse/index.html"><span class="doc">MUSE</span></a>.</p>
+<p>APIs are separated into two categories, namely</p>
+<ul class="simple">
+<li>the <strong>Blockchain API</strong> which is used to query blockchain data (account, assets, trading history, etc.) and</li>
+<li>the <strong>Wallet API</strong> which has your private keys loaded and is required when interacting with the blockchain with new transactions.</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">In order to interface with <em>the wallet</em>, you need to run the
+<a class="reference internal" href="../integration/apps/cliwallet.html"><span class="doc">CLI Wallet</span></a>. Neither the
+<strong>light-wallet</strong>, nor the <strong>hosted web wallet</strong> will provide
+you with an API.</p>
+</div>
+<p>In contrast to many existing ecosystems, there is no centralized service that
+lets you access private API calls after successful authentication. Instead,
+your run your wallet (and optionally a full node) <strong>locally</strong> and are with
+<strong>your own API service provider</strong>. This obviously has the advantage that you
+don’t need to give access to your funds to any third party but has the slight
+disadvantage that you need to run a local <a class="reference internal" href="../integration/apps/cliwallet.html"><span class="doc">wallet application</span></a>, that however does not download the
+whole blockchain for verification. If you run a sensitive business, we
+recommend to also run a local full node to download and verify the
+blockchain and interface your wallet with your local full node.</p>
+<p>This page will give you a detailed description of both API categories, the
+Remote Procedure Calls and Websockets, and will give an introduction to many
+available calls.</p>
+<div class="section" id="interfacing-with-graphene">
+<h2>Interfacing with Graphene<a class="headerlink" href="index.html#interfacing-with-graphene" title="Permalink to this headline">¶</a></h2>
+<p>The set of available calls depends on whether you connect to a full node
+(<code class="docutils literal"><span class="pre">witness_node</span></code>) or the wallet (<code class="docutils literal"><span class="pre">cli_wallet</span></code>). Both support RPC-JSON. The
+full node also supports the websocket protocol with notifications.</p>
+<p>Which blockchain network you connect to (BitShares, MUSE, ..) depends on the
+configuration of the full node and the wallet. If you run a full node, we
+recommend to connect your wallet to your local full node even though it could
+be connected to any other public full node as well.</p>
+<object data="../_images/graphviz-452cdd4114f5186d2f7dd3b61ca1911fa80c5ed8.svg" type="image/svg+xml">
+            <p class="warning">digraph foo {
+ rankdir=LR;
+ ranksep=0.5;
+ nodesep=0.1;
+ overlap=false;
+ splines=ortho;
+
+ node [shape=box];
+ node [fontname=Verdana,fontsize=12]
+ node [style=filled]
+ node [fillcolor=&quot;#EEEEEE&quot;]
+ node [color=&quot;#EEEEEE&quot;]
+ edge [color=&quot;#31CEF0&quot;, dir=back, fontsize=9, fontname=Verdana]
+
+ &quot;P2P network&quot; -&gt; &quot;Full Node&quot; [dir=&quot;both&quot;]
+ &quot;Full Node&quot; -&gt; &quot;Blockchain API&quot;
+ &quot;Full Node&quot; -&gt; &quot;Wallet&quot; -&gt; &quot;Withdraw API&quot;
+
+ {rank=same &quot;Withdraw API&quot; &quot;Blockchain API&quot;}
+}</p></object>
+<p>For sensitive businesses that want to ensure that deposits are irreversible, we
+recommend the use of the <a class="reference internal" href="../integration/network-setup.html#highsecuritynetworksetup"><span class="std std-ref">High Security Setup</span></a>.
+That contains a <em>delayed node</em> to pass only irreversible transactions to the API.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">All API calls are formated in JSON and return JSON only.</p>
+</div>
+<div class="section" id="wallet-api">
+<h3>Wallet API<a class="headerlink" href="index.html#wallet-api" title="Permalink to this headline">¶</a></h3>
+<p>This chapter introduces the calls available via wallet API. If you have not set
+up your wallet yet, you can find more information on the
+<a class="reference internal" href="../integration/apps/cliwallet.html"><span class="doc">CLI Wallet</span></a> and the <a class="reference internal" href="../integration/apps/cli-faq.html"><span class="doc">CLI Wallet FAQ</span></a>
+pages.</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="rpc.html">Remote Procedure Calls</a></li>
+<li class="toctree-l1"><a class="reference internal" href="wallet-api.html">Wallet API Calls</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="blockchain-api-s">
+<h3>Blockchain API(s)<a class="headerlink" href="index.html#blockchain-api-s" title="Permalink to this headline">¶</a></h3>
+<p>The blockchain API can be used to obtain any kind of data stored in the
+blockchain. Besides data stores in the blockchain itself (blocks, transactions,
+etc. ..), higher level objects (such as accounts, balances, etc. …) can be
+retrieved through the full node’s database.</p>
+<p>It is not required to run a local full node if you want to query a particular
+blockchain or database, but you can also query any existing public node for
+information.</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="rpc.html">Remote Procedure Calls</a></li>
+<li class="toctree-l1"><a class="reference internal" href="websocket.html">Websocket Calls &amp; Notifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="blockchain-api.html">Blockchain API</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="blockchain-objects-and-their-identifiers">
+<h3>Blockchain Objects and their Identifiers<a class="headerlink" href="index.html#blockchain-objects-and-their-identifiers" title="Permalink to this headline">¶</a></h3>
+<p>In contrast to many other projects, the Graphene technology distinguishes
+different kinds of objects, in the protocol and implementation space.</p>
+<p>In the protocol space, there are raw objects such as, accounts, assets,
+committee members as well as orders, proposals and balances. The implementation
+space is used to gain access to higher abstraction layers for instance content
+of the current database state (these include, current global blockchain
+properties, dynamic asset data, transaction histories as well as account
+statistics and budget records).</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../development/blockchain/objects.html">Objects and IDs</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+
+  </div>
+ </div>
+
+ <script>var HN=[];HN.factory=function(e){return function(){HN.push([e].concat(Array.prototype.slice.call(arguments,0)))};},HN.on=HN.factory("on"),HN.once=HN.factory("once"),HN.off=HN.factory("off"),HN.emit=HN.factory("emit"),HN.load=function(){var e="hn-button.js";if(document.getElementById(e))return;var t=document.createElement("script");t.id=e,t.src="//hn-button.herokuapp.com/hn-button.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n)},HN.load();</script>
+ <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+ </body>
+</html>
